@@ -9,6 +9,21 @@ scrape   - web scraping & handling pagination
 terminal - interact with terminal (using subprocess)
 ```
 
+#### what I learned
+- selenium is inconsistent
+```
+These functions are janky and some work better than others
+# find_element_by_id
+# find_element_by_xpath
+# find_element_by_css_selector
+```
+
+- selenium is still easy to code in, case in point:
+```python
+action = ActionChains(driver)
+action.drag_and_drop(source, dest).perform()
+```
+
 Relevant links & references
 - http://quotes.toscrape.com/
 - https://scrapingclub.com/exercise/list_basic/
