@@ -20,3 +20,5 @@ sum2_field.send_keys('9')
 # press button
 compute_sum_btn = driver.find_element_by_css_selector('#gettotal > button')
 compute_sum_btn.click()
+
+driver.quit()

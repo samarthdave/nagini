@@ -28,3 +28,4 @@ Relevant links & references
 - http://quotes.toscrape.com/
 - https://scrapingclub.com/exercise/list_basic/
 - https://www.seleniumeasy.com/test/basic-first-form-demo.html
+- http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
