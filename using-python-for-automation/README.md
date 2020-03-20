@@ -10,7 +10,10 @@ terminal - interact with terminal (using subprocess)
 ```
 
 #### what I learned
-- selenium is inconsistent
+- the barcode API is open
+**https://api.upcitemdb.com/prod/trial/lookup?upc=12993401085**
+
+- selenium is inconsiswtent
 ```
 These functions are janky and some work better than others
 # find_element_by_id
