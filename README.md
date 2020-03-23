@@ -3,6 +3,8 @@
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some Python courses.
 
 ### March 2020
+[Learn Web Scraping with Beautiful Soup](https://www.codecademy.com/learn/learn-web-scraping)
+
 [Automate everything in Python](https://www.linkedin.com/learning/using-python-for-automation/)
 
 ## July 2019
