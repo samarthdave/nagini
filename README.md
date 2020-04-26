@@ -19,11 +19,11 @@ live-server ./the-web-dev-bootcamp
 
 [Automate everything in Python](https://www.linkedin.com/learning/using-python-for-automation/)
 
-## July 2019
-[Get Ready for Your Coding Interview - Lynda](https://www.lynda.com/Software-Development-tutorials/Get-Ready-Your-Coding-Interview/)
-
 **libraries/commands used**
 ```shell
 pip3 install beautifulsoup4
 pip3 install selenium
 ```
+
+## July 2019
+[Get Ready for Your Coding Interview - Lynda](https://www.lynda.com/Software-Development-tutorials/Get-Ready-Your-Coding-Interview/)
