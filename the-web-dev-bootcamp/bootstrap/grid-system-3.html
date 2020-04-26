@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+
+    <!-- include Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstrap needs jQuery and JS file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .pink {
+            background: pink;
+            border: 1px solid purple;
+            padding: 10px;
+            font-size: 1.8rem;
+        }
+        /* Olaf's content */
+        .row > .col-lg-3 {
+            background: antiquewhite;
+            border: 1px solid purple;
+            padding: 10px;
+            font-size: 1.8rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- using the grid system -->
+    <div class="container">
+
+        <h2>recreating structure from <a href="https://olafurarnalds.com/">olafurarnalds.com</a></h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="col-lg-3 col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="col-lg-3 col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="col-lg-3 col-md-3 col-sm-6">TOUR DATE!</div>
+        </div>
+
+        <br />
+        <!-- need a row to divide -->
+        <div class="row">
+            <div class="col-lg-2 pink">col lg 2</div>
+            <div class="col-lg-8 pink">col lg 8</div>
+            <div class="col-lg-2 pink">col lg 2</div>
+        </div>
+
+        <br />
+        <h2>12 units going across</h2>
+        
+        <div class="row">
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+            <div class="col-lg-1 col-md-2 pink">col lg 1 ; col md 2</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
