@@ -27,11 +27,16 @@
         /* Olaf's content */
         /* change from col-lg-3 to col-md-3 */
         /* b/c lg-3 is redundant if md-3 */
-        .row > .col-md-3 {
+        .light {
             background: antiquewhite;
             border: 1px solid purple;
             padding: 10px;
             font-size: 1.8rem;
+        }
+        .orange {
+            background: orange;
+            border: 1px dashed red;
+            height: 50px;
         }
     </style>
 
@@ -41,16 +46,41 @@
 
     <!-- using the grid system -->
     <div class="container">
+        <h1 class="text-center">Bootstrap Grid System</h1>
         <br />
 
         <h2>recreating structure from <a href="https://olafurarnalds.com/">olafurarnalds.com</a></h2>
+        <ul>
+            <li>4 across for md & lg <em>col-md-3 (cascades to lg)</em></li>
+            <li>2 across for sm <em>col-sm-6</em></li>
+        </ul>
         <div class="row">
             <!-- COL-MD-3 means that all larger breakpoints are the same -->
             <!-- eg: col-md-3 == col-lg-3 (all larger than md) -->
-            <div class="col-md-3 col-sm-6">TOUR DATE!</div>
-            <div class="col-md-3 col-sm-6">TOUR DATE!</div>
-            <div class="col-md-3 col-sm-6">TOUR DATE!</div>
-            <div class="col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="light col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="light col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="light col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="light col-md-3 col-sm-6">TOUR DATE!</div>
+        </div>
+
+        <br /><hr />
+
+        <h2><strong>nested grids</strong> (nesting) rows & columns</h2>
+        <div class="row">
+            <div class="light col-md-3 col-sm-6">
+                <div class="orange col-md-6">First half</div>
+                <div class="orange col-md-6">Second half</div>
+            </div>
+            <div class="light col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="light col-md-3 col-sm-6">TOUR DATE!</div>
+            <div class="light col-md-3 col-sm-6">
+                <div class="orange col-sm-2"></div>
+                <div class="orange col-sm-2"></div>
+                <div class="orange col-sm-2"></div>
+                <div class="orange col-sm-2"></div>
+                <div class="orange col-sm-2"></div>
+                <div class="orange col-sm-2"></div>
+            </div>
         </div>
 
         <br /><hr /><br />
