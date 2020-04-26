@@ -21,14 +21,33 @@
 
 <body>
 
-    <h1>Bootstrap Basics!</h1>
-    <button class="btn btn-success btn-lg">Click me!</button>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-nav-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Koffee</a>
+            </div>
+            <!-- collapse content -->
+            <div class="collapse navbar-collapse" id="bs-nav-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="#" class="btn btn-primary navbar-btn">Sign in</a>
+                    <a href="#" class="btn btn-success navbar-btn">Sign up</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <a href="https://getbootstrap.com" class="btn btn-primary btn-lg">Get Bootstrap!</a>
 
-    <button class="btn btn-danger btn-lg" disabled>Disabled</button>
-
-    <hr />
+    <!-- main -->
 
     <div class="container">
         <div class="jumbotron">
@@ -36,7 +55,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est temporibus odit voluptates veritatis et
                 quidem. Tempore, fuga. Accusantium sint, doloribus quos libero placeat ullam necessitatibus voluptatum
                 distinctio sapiente? Inventore, eius.</p>
-            <a class="btn btn-success btn-lg" href="#" role="button">Get Bootstrap</a>
+            <a class="btn btn-info btn-lg" href="#" role="button">Get Bootstrap</a>
         </div>
     </div>
 
