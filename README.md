@@ -2,6 +2,9 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some Python courses.
 
+### May 2020
+[Python 3 Bootcamp](https://www.udemy.com/course/the-modern-python3-bootcamp)
+
 ### April 2020
 [Colt Steele's Web Dev Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) - Specifically Bootstrap
 ```
