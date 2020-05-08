@@ -8,15 +8,19 @@ from random import shuffle
 class Card:
     # all possible suits, build a set from it
     _suits_list = ("Hearts", "Diamonds", "Clubs", "Spades")
-    _card_set = set(_suits_list)
+    _suits_set = set(_suits_list)
     # all possible numerical values
     _ranks_list = ("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
-    _rank_set = set(_ranks_list)
+    _ranks_set = set(_ranks_list)
     
     def __init__(self, rank, suit):
+        if suit not in self._suits_set:
+            raise ValueError("Invalid suit: {}".format(suit))
+        if rank not in self._ranks_set:
+            raise ValueError("Invalid rank: {}".format(rank))
         # Generate an Ace of Spades by default
-        self._suit = suit if suit in self._card_set else "Hearts"
-        self._rank = rank if rank in self._rank_set else "A"
+        self._suit = suit
+        self._rank = rank
     
     def __repr__(self):
         # returns "J of Diamonds"
@@ -68,12 +72,20 @@ class Deck:
         return self._deal(hand_size)
     
     def shuffle(self):
-        if self.count() < 52:
-            raise ValueError("Only full decks can be shuffled")
+        if self.count() != 52:
+            raise ValueError("Only standard decks can be shuffled")
 
         shuffle(self.cards)
         return self
-
+    
+    # override standard shuffle procedure
+    def non_standard_shuffle(self):
+        count = self.count()
+        if count != 52:
+            print("Warning: Shuffling {} cards".format(count))
+        shuffle(self.cards)
+        return self
+    
 d = Deck()
 
 d.shuffle()
