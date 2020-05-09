@@ -1,0 +1,48 @@
+// TRANSITION PARTIAL
+@mixin transition($x...) {
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}
+
+$gray-600: #6c757d;
+$gray-700: #495057;
+
+// padding for hover
+$nav-link-padding-y: .2rem;
+$nav-link-padding-x: 1rem;
+
+// hover color for navbar
+$navbar-light-color: $gray-600;
+$navbar-light-hover-color: $gray-700;
+
+// fonts for all navbar items
+.navbar-light {
+    // brand
+    .navbar-brand {
+        font-weight: 500;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-weight: 500;
+            font-family: "Segoe UI", sans-serif;
+
+            // spacing between items
+            margin: 0 0.3rem;
+
+            // make it look pretty
+            border-radius: 5px;
+
+            &:hover,
+            &:focus {
+                @include transition(background 140ms ease-in 0s);
+                color: $navbar-light-hover-color;
+                background: rgba($color: rgb(55, 55, 50), $alpha: 0.1);
+            }
+        }
+    }
+}

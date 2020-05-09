@@ -1,0 +1,19 @@
+// OVERRIDE BOOTSTRAP STYLES BEFORE IMPORTING
+
+// body background color
+$body-bg: #fff8f5;
+
+// make container wider
+$container-max-widths: (
+    // sm: 540px,
+    // md: 720px,
+    // lg: 960px,
+    // xl: 1140px,
+    xl: 1300px,
+    // xxl: 1320px
+) !default;
+
+@import "./navbar.scss";
+
+// import entire bootstrap library
+@import "./node_modules/bootstrap/scss/bootstrap";

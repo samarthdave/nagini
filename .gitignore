@@ -13,3 +13,12 @@
 #
 
 # End of https://www.gitignore.io/api/jupyternotebooks
+
+####################################
+####### bootstrap/npm ignore #######
+####################################
+
+# notion recreated
+notion/node_modules/
+notion/main.css
+notion/main.css.map
