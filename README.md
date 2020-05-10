@@ -7,6 +7,15 @@ A huge Harry Potter fan myself, I had to give this repository a meaningful name.
 
 [More Web Dev Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
 
+#### implementing Notion's website in Bootstrap
+
+TODOS:
+- [x] navbar
+- [x] overriding styles (& building from source)
+- [ ] import order & cleanup using mixins
+  - https://stackoverflow.com/questions/49184471/how-to-change-bootstrap-version-4-button-color
+- [ ] different navbar (with input form) when scroll down
+
 ```
 # npm install bootstrap & build from source
 npm install --save bootstrap
