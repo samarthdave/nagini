@@ -1,0 +1,62 @@
+// JUMBOTRON STYLES
+
+// read this at bottom of typography section in Bootstrap 4.4 docs
+$enable-responsive-font-sizes: true;
+
+$jumbotron-bg: transparent;
+$gray-900: #212529;
+
+// one liner fix from _reboot.scss
+// $paragraph-margin-bottom: 0;
+
+.jumbotron {
+    margin-top: 5rem;
+
+    h1.jumbotron-header {
+        font-size: 5rem;
+        color: $gray-900;
+        font-weight: 700;
+    }
+
+    // text paragraphs
+    .text {
+        font-size: 1.2rem;
+    }
+    .text:first-child {
+        margin-bottom: 0;
+    }
+
+    .lead {
+        font-size: 1.03rem;
+    }
+}
+
+// BUTTON
+// this is the wrong place for it but I just want to change btn-danger
+// $danger: #cf534a;
+$danger: rgb(225, 98, 89);
+$danger-dark: rgb(207, 83, 74);
+$danger-border: rgb(190, 86, 67);
+// $mynewcolor:#cf534a;
+
+// .btn-danger {
+//     @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+// }
+
+// .btn-outline-danger {
+//     // @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+// }
+
+.btn.btn-danger {
+    // mimic Notion styles
+    background: $danger;
+    border: 1px solid $danger-border;
+    // color: #f0f0f0;
+    font-weight: 500;
+
+    &:hover {
+        background: $danger-dark;
+        // color: 
+    }
+}
+

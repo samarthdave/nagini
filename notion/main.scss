@@ -1,7 +1,7 @@
 // OVERRIDE BOOTSTRAP STYLES BEFORE IMPORTING
 
 // body background color
-$body-bg: #fff8f5;
+$body-bg: #ffe1d5;
 
 // make container wider
 $container-max-widths: (
@@ -14,6 +14,7 @@ $container-max-widths: (
 ) !default;
 
 @import "./navbar.scss";
+@import "./jumbotron.scss";
 
 // import entire bootstrap library
 @import "./node_modules/bootstrap/scss/bootstrap";
