@@ -15,6 +15,7 @@ TODOS:
 - [ ] import order & cleanup using mixins
   - https://stackoverflow.com/questions/49184471/how-to-change-bootstrap-version-4-button-color
 - [ ] different navbar (with input form) when scroll down
+- [ ] fix jumbotron width / columns bug for md vs lg
 
 ```
 # npm install bootstrap & build from source
