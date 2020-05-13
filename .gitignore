@@ -18,6 +18,9 @@
 ####### bootstrap/npm ignore #######
 ####################################
 
+node_modules/
+build/
+
 # notion recreated
 notion/node_modules/
 notion/main.css
