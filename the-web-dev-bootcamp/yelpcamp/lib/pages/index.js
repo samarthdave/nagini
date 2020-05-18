@@ -7,10 +7,8 @@ const NavbarVariables = require("./NavbarVariables.js");
 //      ... and so on
 // };
 
-// pack all together with 'Home', 'About', etc.
-// representing the title of each page
 const pages = {
-  Home: {
+  Yelpcamp: {
     ...NavbarVariables
   }
   // ... 'About': { ...AboutVariables }

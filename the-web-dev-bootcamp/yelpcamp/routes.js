@@ -8,6 +8,7 @@ app.set("view engine", "ejs");
 app.use("/static", express.static("static"));
 
 // PAGES
-app.get("/", renderPage("Home", "index"));
+app.get("/",            renderPage("Yelpcamp", "landing"));
+app.get("/campgrounds", renderPage("Yelpcamp", "index"));
 
 exports.app = app;

@@ -1,19 +1,32 @@
-<nav class="navbar navbar-default navbar-expand-lg">
-  <!-- responsive toggle button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand" href="<%= yelpcamp.navbarBrandHref %>">
+            <%= yelpcamp.navbarBrand %>
+        </a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto mr-auto pt-2">
-      <!-- tell me this is not the most elegant thing ever made -->
-      <% yelpcamp.navbar.forEach(({ name, href }) => { %>
-      <li class="nav-item active">
-        <a class="nav-link same-page-nav-link" href="<%= href %>">
-          <%= name %></a>
-      </li>
-      <% }) %>
-    </ul>
-
-  </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <% yelpcamp.navbarLeft.forEach(({ name, href }) => { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= href %>">
+                        <%= name %>
+                    </a>
+                </li>
+                <% }) %>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <% yelpcamp.navbarRight.forEach(({ name, href }) => { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= href %>">
+                        <%= name %>
+                    </a>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
 </nav>

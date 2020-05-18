@@ -12,7 +12,8 @@ exports.renderPage = (pageName, templateFile) => {
       ...req,
       // this access the variables for that page
       ...pages[pageName],
-      pageName
+      pageName,
+      templateFile
     };
     res.render(templateFile, {
       yelpcamp: newReq
