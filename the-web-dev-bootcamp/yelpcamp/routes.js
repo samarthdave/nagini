@@ -1,7 +1,6 @@
 const express = require("express");
 const {
-  renderPage,
-  renderPost
+  renderPage
 } = require("./lib/resolvers");
 const app = express();
 

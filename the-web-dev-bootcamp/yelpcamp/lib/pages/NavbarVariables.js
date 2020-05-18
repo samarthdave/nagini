@@ -4,14 +4,8 @@ const NavbarVariables = {
     name: "Home",
     href: "/",
   }, {
-    name: "About",
-    href: "#",
-  }, {
-    name: "Sponsors",
-    href: "#",
-  }, {
-    name: "Team",
-    href: "#",
+    name: "Campgrounds",
+    href: "/campgrounds",
   }]
 };
 
