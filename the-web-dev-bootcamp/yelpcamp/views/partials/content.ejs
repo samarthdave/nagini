@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <% yelpcamp.campgrounds.forEach((cpg) => { %>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card indexCards shadow border-0 mt-4">
+                <a href="<%= cpg.href %>">
+                    <img class="card-img-top campgroundCard" src="<%= cpg.imageURL %>" />
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                        <a href="<%= cpg.href %>">Wailing Woods</a>
+                        <small class="float-right text-muted"><%= "$".repeat(cpg.price) %></small>
+                    </h5>
+                    <h6 class="card-subtitle">
+                        <%- '<i class="fas fa-star text-danger"></i>'.repeat(cpg.rating) %>
+                        <%- '<i class="far fa-star text-danger"></i>'.repeat(5 - cpg.rating) %>
+                        <span class="text-muted"><%= cpg.reviewCount %> Reviews</span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>

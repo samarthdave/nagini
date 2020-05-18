@@ -1,5 +1,6 @@
 // import all variables & spread their values
 const NavbarVariables = require("./NavbarVariables.js");
+const CampgroundVariables = require("./CampgroundVariables.js");
 
 // USAGE example
 // const AboutVariables = {
@@ -9,7 +10,8 @@ const NavbarVariables = require("./NavbarVariables.js");
 
 const pages = {
   Yelpcamp: {
-    ...NavbarVariables
+    ...NavbarVariables,
+    ...CampgroundVariables
   }
   // ... 'About': { ...AboutVariables }
 };
