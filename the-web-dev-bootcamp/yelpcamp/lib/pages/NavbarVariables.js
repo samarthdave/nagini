@@ -10,7 +10,7 @@ const NavbarVariables = {
     href: "/about",
   }, {
     name: "New",
-    href: "/campgrounds/new",
+    href: "#",
   }],
   navbarRight: [{
     name: "Login",
