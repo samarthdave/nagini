@@ -8,8 +8,6 @@ const fetch = require("node-fetch");
 const rimraf = require("rimraf");
 const path = require("path");
 
-const cnameContent = "tamudatathon.com";
-
 const rimrafPromise = fp => {
   return new Promise((res, rej) => {
     return rimraf(fp, err => {
@@ -29,8 +27,6 @@ const ncpPromise = (src, dest) => {
     });
   });
 };
-
-const createCNAME = () => fs.promises.writeFile("CNAME", cnameContent);
 
 let routes = app._router.stack.filter(r => r.route && r.route.path).map(r => r.route.path);
 

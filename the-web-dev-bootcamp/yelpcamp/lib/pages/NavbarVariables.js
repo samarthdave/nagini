@@ -1,7 +1,7 @@
 // create all variables for each component
 const NavbarVariables = {
   navbarBrand: 'Yelpcamp',
-  navbarBrandHref: '/landing',
+  navbarBrandHref: '/',
   navbarLeft: [{
     name: "Campgrounds",
     href: "/campgrounds",

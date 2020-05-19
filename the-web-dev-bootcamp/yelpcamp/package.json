@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node lib/server.js"
+    "start": "node lib/server.js",
+    "build": "node lib/render_to_static.js"
   },
   "keywords": [],
   "author": "",

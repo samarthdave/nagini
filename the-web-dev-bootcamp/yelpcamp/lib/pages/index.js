@@ -11,7 +11,9 @@ const CampgroundVariables = require("./CampgroundVariables.js");
 const pages = {
   Yelpcamp: {
     ...NavbarVariables,
-    ...CampgroundVariables
+    ...CampgroundVariables,
+    signupPath: '/signup',
+    loginPath: '/login'
   }
   // ... 'About': { ...AboutVariables }
 };

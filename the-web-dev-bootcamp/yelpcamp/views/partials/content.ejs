@@ -8,12 +8,13 @@
                 </a>
                 <div class="card-body">
                     <h5 class="card-title text-capitalize">
-                        <a href="<%= cpg.href %>">Wailing Woods</a>
+                        <a href="<%= cpg.href %>"><%= cpg.name %></a>
                         <small class="float-right text-muted"><%= "$".repeat(cpg.price) %></small>
                     </h5>
                     <h6 class="card-subtitle">
-                        <%- '<i class="fas fa-star text-danger"></i>'.repeat(cpg.rating) %>
-                        <%- '<i class="far fa-star text-danger"></i>'.repeat(5 - cpg.rating) %>
+                        <!-- have to keep both favicons on same line or
+                            else weird space between stars -->
+                        <%- '<i class="fas fa-star text-danger"></i>'.repeat(cpg.rating) %><%- '<i class="far fa-star text-danger"></i>'.repeat(5 - cpg.rating) %>
                         <span class="text-muted"><%= cpg.reviewCount %> Reviews</span>
                     </h6>
                 </div>
