@@ -25,3 +25,7 @@ build/
 notion/node_modules/
 notion/main.css
 notion/main.css.map
+
+# add yelpcamp ignore
+the-web-dev-bootcamp/yelpcamp/node_modules/
+the-web-dev-bootcamp/yelpcamp/public/

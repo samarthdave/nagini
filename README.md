@@ -1,31 +1,27 @@
-## Nagini :snake:
+# Nagini :snake:
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
-### May 2020
+## May 2020
 [Python 3 Bootcamp](https://www.udemy.com/course/the-modern-python3-bootcamp)
 
 [More Web Dev Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)
 
-#### implementing Notion's website in Bootstrap
-
-TODOS:
-- [x] navbar
-- [x] overriding styles (& building from source)
-- [ ] import order & cleanup using mixins
-  - https://stackoverflow.com/questions/49184471/how-to-change-bootstrap-version-4-button-color
-- [ ] different navbar (with input form) when scroll down
-- [ ] fix jumbotron width / columns bug for md vs lg
+#### - implementing Notion's website in Bootstrap
 
 ```
 # npm install bootstrap & build from source
 npm install --save bootstrap
 # build with sass (npm install -g sass)
 sass --watch main.scss main.css
+# and
+live-server ./the-web-dev-bootcamp
 ```
 
-### April 2020
-[Colt Steele's Web Dev Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) - Specifically Bootstrap
+#### - and implementing a static [Yelpcamp](https://yelpcamp-clone.now.sh/)
+
+## April 2020
+[Colt Steele's Web Dev Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) - Bootstrap Section
 ```
 # install live-server (node package)
 npm install live-server -g
@@ -34,7 +30,7 @@ npm install live-server -g
 live-server ./the-web-dev-bootcamp
 ```
 
-### March 2020
+## March 2020
 :white_check_mark: [Web Dev Track](https://www.codecademy.com/learn/paths/web-development)
 
 :white_check_mark: [Learn Web Scraping with Beautiful Soup](https://www.codecademy.com/learn/learn-web-scraping)

@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node lib/server.js",
-    "build": "node lib/render_to_static.js"
+    "build": "npm run build:static && npm run build:css",
+    "build:static": "node lib/render_to_static.js",
+    "build:css": "cp ./static/css/* ./public/static"
   },
   "keywords": [],
   "author": "",

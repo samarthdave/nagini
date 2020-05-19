@@ -37,6 +37,8 @@ const server = app.listen(3000, () => console.log(`listening on port 3000!`));
 const main = async () => {
   await rimrafPromise("public");
   await fs.promises.mkdir("public");
+  // create static folder
+  await fs.promises.mkdir(path.join("public", "static"));
 
   for (let route of routes) {
     let str = await fetch("http://localhost:3000" + route).then(res => res.text());
@@ -45,7 +47,6 @@ const main = async () => {
     });
     await fs.promises.writeFile(path.join("public", route, "index.html"), str);
   }
-  await createCNAME();
   await ncpPromise("static", "public/static");
 };
 
