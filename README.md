@@ -2,6 +2,10 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
+## June 2020
+[CS50x on edX](https://www.edx.org/course/cs50s-introduction-to-computer-science)
+- just the Python part as a refresher
+
 ## May 2020
 [Python 3 Bootcamp](https://www.udemy.com/course/the-modern-python3-bootcamp)
 
