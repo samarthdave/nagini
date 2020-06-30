@@ -8,9 +8,17 @@
 
 def main():
     print("### Credit ###")
-    # usually lengths of 13, 15, 16
-    user_card_num_str = input("Number: ")
-    user_card_num = int(user_card_num_str)
+    # usual card lengths of 13, 15, 16
+    while True:
+        user_card_num_str = input("Number: ")
+        user_card_num_str = user_card_num_str.strip()
+        try:
+            user_card_num = int(user_card_num_str)
+        except:
+            continue
+        if len(user_card_num_str) != 13 and len(user_card_num_str) != 15 and len(user_card_num_str) != 16:
+            continue
+        break
 
     # are we checking the first digit?
     is_first_sum = False
@@ -41,11 +49,9 @@ def main():
         if user_card_num <= 0:
             break
 
-    print("First set of numbers:")
-    print(f'[{first_str_out}]')
+    print(f"First set of numbers: [{first_str_out}]")
     print("========")
-    print("Second set of numbers:")
-    print(f'[{second_str_out}]')
+    print(f"Second set of numbers: [{second_str_out}]")
 
     # check if valid credit card
     final_sum = first_sum + second_sum
