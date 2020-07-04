@@ -2,6 +2,9 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
+## July 2020
+[Data Structures & Algo w/ Colt Steele](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass)
+
 ## June 2020
 [CS50x on edX](https://www.edx.org/course/cs50s-introduction-to-computer-science)
 - just the Python part as a refresher
