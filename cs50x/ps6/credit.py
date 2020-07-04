@@ -50,8 +50,8 @@ def main():
             break
 
     print(f"First set of numbers: [{first_str_out}]")
-    print("========")
     print(f"Second set of numbers: [{second_str_out}]")
+    print("================")
 
     # check if valid credit card
     final_sum = first_sum + second_sum
@@ -59,8 +59,6 @@ def main():
 
     is_valid_credit_card = final_sum_remainder == 0
     if is_valid_credit_card:
-        print("Valid credit card!")
-
         # American Express start w/ 34 or 37;
         # MasterCard start with 51, 52, 53, 54, or 55
         # all Visa numbers start with 4
