@@ -2,6 +2,10 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
+## August 2020
+
+[CMU 15-112](https://www.cs.cmu.edu/~112/schedule.html)
+
 ## July 2020
 [Data Structures & Algo w/ Colt Steele](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass)
 
