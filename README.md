@@ -4,6 +4,8 @@ A huge Harry Potter fan myself, I had to give this repository a meaningful name.
 
 ## August 2020
 
+[Continuing Colt's Course](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass)
+
 [CMU 15-112](https://www.cs.cmu.edu/~112/schedule.html)
 
 ## July 2020
