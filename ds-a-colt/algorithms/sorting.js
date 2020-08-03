@@ -7,11 +7,14 @@ function bubbleSort(arr) {
         [target[index1], target[index2]] = [target[index2], target[index1]]
     }
     for (let i = arr.length - 1; i >= 0; i--) {
+        let noSwap = true;
         for (let j = 0; j < i; j++) {
             if (arr[j] > arr[j+1]) {
+                noSwap = false;
                 swap(arr, j, j+1)
             }
         }
+        if (noSwap) break;
     }
     return arr;
 }
