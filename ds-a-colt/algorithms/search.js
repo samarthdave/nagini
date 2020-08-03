@@ -24,10 +24,11 @@ function binarySearch(sortedArr, target) {
 }
 
 // Naive String Search
-// find substring occurrences in larger string
+// find substring occurrences in larger string (case sensitive)
 // pretty inefficient but that's why it's "naive"
 // ex.
-//     naiveSearch("Harold said haha in Hamburg", "haha")
+//     naiveSearch("haha Haha", "haha") --> 1
+//     naiveSearch("Harold said haha in Hamburg", "haha") --> 1
 function naiveSearch(long, short) {
     let matchCount = 0;
     // loop through both strings
@@ -35,22 +36,14 @@ function naiveSearch(long, short) {
         let matchLength = 0;
         // loop through smaller string
         for (let j = 0; j < short.length; j++) {
-            if (long[i + j] === short[j]) {
-                // we're good
-                matchLength += 1;
-            } else {
-                break;
-            }
+            // if they don't match then break; else increment
+            if (long[i + j] !== short[j]) break;
+            matchLength += 1;
         }
         // if we found the string, increment matchCount
-        if (matchLength === short.length) {
-            console.log(`${short} found in ${long}`);
-            console.log(`at ${i}`);
-            matchCount += 1;
-        }
+        if (matchLength === short.length) matchCount += 1;
     }
-    return matchLength;
+    return matchCount;
 }
 
-const res = naiveSearch("Harold said haha in Hamburg", "haha");
-console.log(res);
+naiveSearch("Harold said haha in Hamburg", "haha")
