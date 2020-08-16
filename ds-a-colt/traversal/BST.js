@@ -80,12 +80,8 @@ class BinarySearchTree {
             result.push(current.value);
 
             // if first item has children, add them to queue
-            if (current.left) {
-                queue.push(current.left);
-            }
-            if (current.right) {
-                queue.push(current.right);
-            }
+            if (current.left) queue.push(current.left);
+            if (current.right) queue.push(current.right);
         }
 
         return result;
