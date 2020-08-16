@@ -87,21 +87,32 @@ class BinarySearchTree {
         return result;
     }
 
-    DFS_PreOrder_Helper() {
+    DFS_PreOrder() {
         if (this.root === null) return [];
-
         let result = [];
-        // pass array in by reference
-        this.DFS_PreOrder(this.root, result);
+
+        function traverse(node) {
+            result.push(node.value);
+            // go left & right
+            if (node.left) traverse(node.left, result);
+            if (node.right) traverse(node.right, result);
+        }
+        traverse(this.root);
         return result;
     }
-    DFS_PreOrder(node, result) {
-        // print current
-        result.push(node.value);
-        // go left
-        if (node.left) this.DFS_PreOrder(node.left, result);
-        // go right
-        if (node.right) this.DFS_PreOrder(node.right, result);
+
+    DFS_PostOrder() {
+        if (this.root === null) return [];
+        let result = [];
+
+        function traverse(node) {
+            // go left & right
+            if (node.left) traverse(node.left, result);
+            if (node.right) traverse(node.right, result);
+            result.push(node.value);
+        }
+        traverse(this.root);
+        return result;
     }
 }
 
@@ -117,8 +128,8 @@ tree.insert(20);
 //     6       15
 //  3    8         20
 
-let result = tree.DFS_PreOrder_Helper();
-// should be [10, 6, 15, 3, 8, 20]
+let result = tree.DFS_PostOrder();
+// should be [3,8,6,20,15,10]
 console.log(result);
 
 // let treeTest = [10, 6, 15, 3, 8, 20];
