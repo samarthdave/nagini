@@ -86,6 +86,23 @@ class BinarySearchTree {
 
         return result;
     }
+
+    DFS_PreOrder_Helper() {
+        if (this.root === null) return [];
+
+        let result = [];
+        // pass array in by reference
+        this.DFS_PreOrder(this.root, result);
+        return result;
+    }
+    DFS_PreOrder(node, result) {
+        // print current
+        result.push(node.value);
+        // go left
+        if (node.left) this.DFS_PreOrder(node.left, result);
+        // go right
+        if (node.right) this.DFS_PreOrder(node.right, result);
+    }
 }
 
 let tree = new BinarySearchTree();
@@ -100,7 +117,7 @@ tree.insert(20);
 //     6       15
 //  3    8         20
 
-let result = tree.BFS();
+let result = tree.DFS_PreOrder_Helper();
 // should be [10, 6, 15, 3, 8, 20]
 console.log(result);
 
