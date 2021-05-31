@@ -94,8 +94,8 @@ class BinarySearchTree {
         function traverse(node) {
             result.push(node.value);
             // go left & right
-            if (node.left) traverse(node.left, result);
-            if (node.right) traverse(node.right, result);
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
         }
         traverse(this.root);
         return result;
@@ -107,9 +107,21 @@ class BinarySearchTree {
 
         function traverse(node) {
             // go left & right
-            if (node.left) traverse(node.left, result);
-            if (node.right) traverse(node.right, result);
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
             result.push(node.value);
+        }
+        traverse(this.root);
+        return result;
+    }
+
+    DFS_InOrder() {
+        if (this.root === null) return [];
+        const result = [];
+        function traverse(node) {
+            if (node.left) traverse(node.left);
+            result.push(node.value);
+            if (node.right) traverse(node.right);
         }
         traverse(this.root);
         return result;
