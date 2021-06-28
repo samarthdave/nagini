@@ -2,6 +2,10 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
+## June 2021
+
+[COE 332](https://coe-332-sp21.readthedocs.io)
+
 ## August 2020
 
 [Continuing Colt's Course](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass)
