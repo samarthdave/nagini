@@ -2,9 +2,22 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
-## June 2021
+## August 2021
 
 [COE 332](https://coe-332-sp21.readthedocs.io)
+```bash
+# submodule command
+git submodule add https://github.com/TACC/coe-332-sp21.git ./coe332/coe-332-sp-21
+
+# to delete a submodule
+# 1. delete lines in .gitmodules and .git/config files
+code ./.git/config
+# 2. delete selection
+# 3. run:
+git rm --cached ./path_to_submodule # no trailing slash
+# 4. commit in superproject
+# 5. delete untracked submoduel files
+```
 
 ## August 2020
 
