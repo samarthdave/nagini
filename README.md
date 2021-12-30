@@ -2,6 +2,12 @@
 
 A huge Harry Potter fan myself, I had to give this repository a meaningful name. This is really just doing some ~~Python~~ courses.
 
+## December 2021
+
+[10 Days of Statistics](https://www.hackerrank.com/domains/tutorials/10-days-of-statistics)
+
+- read a book or watch some youtube videos, the first half of this is okay and worth your time. the rest isn't
+
 ## August 2021
 
 [COE 332](https://coe-332-sp21.readthedocs.io)
