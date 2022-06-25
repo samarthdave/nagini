@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "front-matter": "^3.2.1",
     "ncp": "^2.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "node-sass": "^4.14.1"
   },
   "devDependencies": {
