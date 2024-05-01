@@ -1,6 +1,8 @@
 ---
 title: "Introduction to R and RStudio"
-output: statsr:::statswithr_lab
+# output: statsr:::statswithr_lab
+output: html_document
+date: "2024-05-01"
 ---
 
 <div id="instructions">
@@ -207,7 +209,7 @@ variable that comes after me".
 
 ```{r extract-counts-of-girls-born}
 # type your code for the Question 2 here, and Knit
-
+arbuthnot$girls
 ```
 
 Notice that the way R has printed these data is different. When we looked at the
@@ -352,7 +354,9 @@ do you see?
 
 ```{r plot-proportion-of-boys-over-time}
 # type your code for the Exercise here, and Knit
-
+ggplot(data = arbuthnot, aes(x = year, y = boys)) +
+  geom_line() +
+  geom_point()
 ```
 
 Finally, in addition to simple mathematical operators like subtraction and 
@@ -401,7 +405,7 @@ your workspace.
 
 ```{r variables-in-present}
 # type your code for Question 4 here, and Knit
-
+present
 ```
 
 <div id="exercise">
@@ -411,7 +415,7 @@ function and `present$year` as its argument.
 
 ```{r years-in-present-data}
 # type your code for Exercise here, and Knit
-
+range(present$year)
 ```
 
 5. Calculate the total number of births for each year and store these values in a new 
@@ -427,7 +431,12 @@ decreased over time.
 
 ```{r prop-boys-over-time}
 # type your code for Question 5 here, and Knit
+present$total = present$boys + present$girls
+present$prop_boys = present$boys / present$total
+```
 
+```{R}
+plot(present$year, present$prop_boys)
 ```
 
 
@@ -442,7 +451,8 @@ variable which of the following statements is true?
 
 ```{r more-boys-per-year}
 # type your code for Question 6 here, and Knit
-
+present$more_boys = present$boys > present$girls
+plot(present$year, present$more_boys)
 ```
 
 
@@ -457,7 +467,8 @@ variable which of the following statements is true?
 
 ```{r prop-boy-girl-over-time}
 # type your code for Question 7 here, and Knit
-
+present$prop_boy_girl = present$boys / present$girls
+plot(present$year, present$prop_boy_girl)
 ```
 
 8. In what year did we see the most total number of births in the U.S.? *Hint:* Sort 
@@ -476,9 +487,9 @@ descending order).
 ```{r most-total-births}
 # type your code for Question 8 here
 # sample code is provided below, edit as necessary, uncomment, and then Knit
-#present %>%
-#  mutate(total = ?) %>%
-#  arrange(desc(total))
+present %>%
+  mutate(total = present$boys + present$girls) %>%
+  arrange(desc(total))
 ```
 
 ## Resources for learning R and working in RStudio
