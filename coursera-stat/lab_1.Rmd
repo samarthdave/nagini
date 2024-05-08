@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R and RStudio"
 output:
-  pdf_document: default
+  github_document: default
   html_document: default
 date: "2024-05-01"
 ---
